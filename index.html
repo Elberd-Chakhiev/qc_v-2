@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartz Сapital</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js"></script>
+    <link rel = "shortcut icon" href = "img/Logo_white.svg" type = "image/svg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800;900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="preloader_malc">
+
+        <div style="font-family: Poppins;">
+            <div class="preload_img" >
+        
+                <img src="img/Logo_white.svg" alt="" style="max-width: 50%; margin: -170px auto 0 auto; padding: 20px; ">
+        
+            </div>
+    
+            Please wait, the site is loading ...
+    
+        </div>
+    
+    </div>
+    
+    <style type="text/css">
+        #preloader_malc {
+            transition: 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #0F0F0F;
+            z-index: 10002;
+            
+        }
+    
+        #preloader_malc div {
+            transition: 1s;
+            z-index: 10001;
+            color: white;
+            width: 260px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 8px;
+            font-family: arial;
+            font-size: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto
+        }
+    </style>
+    
+    <script type="text/javascript">
+    
+        window.onload = function() {
+    
+            setTimeout(function() {
+    
+                document.getElementById("preloader_malc").style.cssText = "opacity: 0; visibility: hidden;";
+    
+            }, 400);
+    
+        };
+    
+    </script>
+    <header class="header">
+
+
+        <div class="burgeractivate trigger" id="menu">
+            <menu class="burger_menu">
+                <ul class="burger_menu__ul">
+                    <li class="burger_menu__li"> <a href="#introduction" class="nav_menu__a" >Introduction</a> </li>
+                    <li class="burger_menu__li"> <a href="#about" class="nav_menu__a" >About us</a> </li>
+                    <li class="burger_menu__li"> <a href="#activities" class="nav_menu__a" >Activities</a> </li>
+                    <li class="burger_menu__li"> <a href="#team" class="nav_menu__a" >Team</a> </li>
+                    <li class="burger_menu__li" style="display: none;"> <a href="#news" class="nav_menu__a" >News</a> </li>
+                    <li class="burger_menu__li"> <a href="#contacts" class="nav_menu__a" >Contacts</a> </li>
+                    <li class="burger_menu__li"> <a href="#" class="nav_menu__a submitapp" >Submit your application <img src="img/arrow.svg" alt="" style="max-width: 30px; margin-right: 20px; display: block;"></a> </li>
+                    <li class="burger_menu__li" style="cursor: pointer;" id="close"> <img src="img/plus.svg" alt="" class="plusrotate">  </li>
+                </ul>
+            </menu>
+        </div>
+
+        <div class="image-slider " style="position: relative;">
+            <!-- <div class="image-swiper__wrapper"> -->
+                
+                
+                <div class="image-slider__slide ">
+                        <!-- <div class="drk-filter-header"></div> -->
+                    <div class="container posreal">
+                        <div class="wrapp_nav  ">
+                <nav class="nav ">
+                    
+               <div class="nav_logo">
+                  <a href="#"><img src="img/logo.png" alt=""></a> 
+               </div>
+        
+               <menu class="nav_menu">
+                   <ul class="nav_menu__ul">
+                       <li class="nav_menu__li"> <a href="#introduction" class="nav_menu__a" >Introduction</a> </li>
+                       <li class="nav_menu__li"> <a href="#about" class="nav_menu__a" >About us</a> </li>
+                       <li class="nav_menu__li"> <a href="#activities" class="nav_menu__a" >Activities</a> </li>
+                       <li class="nav_menu__li"> <a href="#team" class="nav_menu__a" >Team</a> </li>
+                       <li class="nav_menu__li" style="display: none;"> <a href="#news" class="nav_menu__a" >News</a> </li>
+                       <li class="nav_menu__li"> <a href="#contacts" class="nav_menu__a" >Contacts</a> </li>
+                   </ul>
+               </menu>
+        
+        
+               <div class="nav_button">
+                   <div class="nav_button__a"> <a href="#" class="nav_menu__a">Submit your application</a>  </div>
+                   <div class="nav_button__arr"> <a href="#"> <img  src="img/arrow.svg" alt=""> </a> </div>
+               </div>
+               <div class="menu-wrapper" id="burger">
+                   <div class="hamburger-line"></div>	  
+                   <div class="hamburger-line"></div>	  
+                   <div class="hamburger-line"></div>	  
+                 </div>
+           </nav>
+        </div>
+
+                        <div class="slider_wrapp__img">
+                            <img class="lozad" data-src="img/Logo_white.svg" alt="">
+                         </div>
+                        <h1 class="slider_wrapp__h">  
+                            We invest in fast growing companies that are shaping the future through technology.
+                        </h1>
+
+                        <!-- beta_hide -->
+                        <div class="slider_wrapp__h" style="display: none;">  
+                            We <span class="about__subtittle_blue" >invest in fast growing companies</span> that are shaping the future through technology.
+                        </div>
+                        <!-- beta_hide -->
+                    </div>
+
+                        <video src="img/Bg_Video-2.mp4" class="video_header" autoplay="autoplay" playsinline muted="true" loop width="1920px" controls="false" id="vid1"></video>
+
+
+                </div> 
+
+            <div class="swiper-pagination" id="fixHeight"></div>
+        </div>
+          
+    </header>
+
+<main class="main">
+
+
+
+
+    <section class="about" id="about">
+
+        
+        <div class="container poset lozad" data-background-image-set="/img/vectors.png">
+
+            <div class="about_wrapp">
+                <h3 class="about__h _anim-items_margin" id="aboutid"> About us</h3>
+                <p class="about__subtittle">
+
+                    Quartz is a  <span class="about__subtittle_blue">global investment firm </span> based in 
+                    <span class="about__subtittle_blue">London</span>   and  <span class="about__subtittle_blue">Moscow</span> that
+                    works with <span class="about__subtittle_blue">Venture Capital</span>   firms,
+                    investment firms, 
+                    family officesand
+                     <span class="about__subtittle_blue">individual</span>
+                     investors.
+
+                    
+                    </p>
+                <div class="wrapp_about_p ke1">
+                    <p class="about__p" data-aos="fade-left">
+                        We invest in disruptive technology companies that strive to become
+                        market leaders. 
+
+                    </p>
+                    <p class="about__p ke2 " data-aos="fade-right">
+                        Our core focus are primarily fast scaling software
+                        companies with a mission to solve major pain points and solve complex
+                        challenges. 
+                    </p>
+                <p class="about__p ke3" data-aos="fade-up">In addition to private equity, 
+                    In addition to private equity, we also invest in new and
+                    exceptional venture capital funds who empower great entrepreneurs
+                    around the world.
+                    
+                </p>
+            </div>
+
+                
+            </div>
+            <div class="ball_wrapp-for-phones"></div>
+            <div class="baaaall "></div>
+            <div class="baaaall2 "></div>
+            <div class="baaaall3 "></div>
+            <div class="ball_wrapp__">
+                <div class="baaaall4"></div>
+                <div class="baaaall5 "></div>        
+            </div>
+            <div class="ball_wrapp__ fix_rotate_posit">
+                <div class="baaaall4"></div>
+                <div class="baaaall5 "></div>        
+            </div>
+            <div class="dd lozad"  data-background-image-set="img/vectors_bgmask-min.png"></div>
+        
+    </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+    <section class="whatwedo" id="introduction">
+        <div class="container">
+            <div class="whatwedo_wrapp">
+                <div class="whatwedo__h _anim-items_margin">What we do</div>
+
+            </div>
+        </div>
+        <div class="whatwedo_info_wrapp">
+
+            <div class="whatwedo_info infobg1 lozad" data-background-image-set="img/wwd_bgimg1.webp">
+
+                <div class="whatwedo_info_items">
+                    <div class="whatwedo_item1" data-aos="fade-right">01</div>
+                    <div class="whatwedo_item2">
+                        Mid & Late Stage venture deals
+                    </div>
+                    <div class="whatwedo_item3">
+                        <p class="whatwedo_item3__p">
+                            venture deals that fuel fast scaling technology companies
+                        </p>
+                        <p class="whatwedo_item3__p pbcenter hide " id="letp1">
+                            Venture deals that are solving complex challenge via deep tech solutions
+                        </p>
+                        <p class="whatwedo_item3__p hide " id="letp2" style="display: none;">
+                            Venture deals that are solving complex challenge via deep tech solutions
+                        </p>
+                        <div class="whatwedo_item3__plus"> 
+                            <img src="img/plus.svg" alt="" class=" " id="hideplus1"> 
+                            <img src="img/minus.svg" alt="" class="beforeminus hide" id="hideminus1">
+                            <!-- <span class="whatwedo_item3__b"> Collapse </span> -->
+                        
+                        </div>
+                        <div class="whatwedo_item3__learn"><span class="whatwedo_item3__a" id="learnmore1">Learn more</span></div >
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="whatwedo_info infobg2 lozad" data-background-image-set="img/wwd_bgimg2.webp">
+                <div class="whatwedo_info_items">
+                    <div class="whatwedo_item1" data-aos="fade-right">02</div>
+                    <div class="whatwedo_item2">
+                        Pre Ipo investments
+                    </div>
+                    <div class="whatwedo_item3">
+                        <p class="whatwedo_item3__p">
+                            We invest in companies after they’ve been through some of the
+                            riskiest stages of growth and prove their financial concept.                            
+                        </p>
+                        <p class="whatwedo_item3__p pbcenter hide " id="letp3">
+                            Late stage companies which embark a new chapter, the private
+                            markets
+                        </p>
+                        <p class="whatwedo_item3__p hide " id="letp4">
+                            We partner with great Venture Capital funds to access the best
+                            emerging opportunities.
+                        </p>
+                        <div class="whatwedo_item3__plus"> 
+                            <img src="img/plus.svg" alt="" id="hideplus2">
+                             <img src="img/minus.svg" alt="" class="beforeminus hide" id="hideminus2"> 
+                        </div>
+                        <div class="whatwedo_item3__learn"><span class="whatwedo_item3__a" id="learnmore2">Learn more</span></div >
+                    </div>
+                </div>
+            </div>
+            <div class="whatwedo_info infobg3 lozad" data-background-image-set="img/wwd_bgimg3.webp">
+                <div class="whatwedo_info_items">
+                    <div class="whatwedo_item1 " data-aos="fade-right">03</div>
+                    <div class="whatwedo_item2">
+                        Investments in Venture Funds
+                    </div>
+                    <div class="whatwedo_item3">
+                        <p class="whatwedo_item3__p">
+                            We invest in companies after they’ve been through some of the
+                            riskiest stages of growth and prove their financial concept.
+                        </p>
+                        <p class="whatwedo_item3__p pbcenter hide " id="letp5">
+                            Companies who are profitable pre-IPO excite us.
+                        </p>
+                        <p class="whatwedo_item3__p hide " id="letp6">
+                            Venture deals that are solving complex challenge via deep tech solutions
+                        </p>
+                        <div class="whatwedo_item3__plus">
+                             <img class="lozad" data-src="img/plus.svg" alt=""  id="hideplus3"> 
+                            <img src="img/minus.svg" alt="" class="beforeminus hide" id="hideminus3"> 
+                        </div>
+                        <div class="whatwedo_item3__learn"><span class="whatwedo_item3__a" id="learnmore3">Learn more</span></div >
+                    </div>
+                </div>
+            </div>
+            <div class="whatwedo_info infobg4 lozad" data-background-image-set="img/wwd_bgimg4.webp">
+                <div class="whatwedo_info_items">
+                    <div class="whatwedo_item1 " data-aos="fade-right">04</div>
+                    <div class="whatwedo_item2">
+                         Deal advisory
+                    </div>
+                    <div class="whatwedo_item3">
+                        <p class="whatwedo_item3__p">
+                            Quartz Capital provides additional services
+                            such as deal structuring, technical due-diligence and general
+                            deal management.
+                        </p>
+                        <p class="whatwedo_item3__p pbcenter hide " id="letp7">
+                            We understand the legal and tax complexities associated with
+                            cross-jurisdictional investment opportunities and are able to
+                            advice our clients every stage of the process
+                        </p>
+
+                        <div class="whatwedo_item3__plus"> 
+                            <img src="img/plus.svg" alt="" id="hideplus4"> 
+                            
+                            <img src="img/minus.svg" alt="" class="beforeminus hide" id="hideminus4">
+                         </div>
+                        <div class="whatwedo_item3__learn"><span class="whatwedo_item3__a" id="learnmore4">Learn more</span></div >
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+
+    <section class="activities posreal" id="activities">
+
+        <div class="container">
+            <div class="activities_wrapp"><h3 class="activities__h whatwedo__h" data-aos="fade-right" >Our investment focus</h3>
+    
+                <div class="activities_bgimg" id="world">
+                    <video autoplay="autoplay" muted="true" loop controls="false" playsinline type="video/mp4" src="img/cristal2-min.mp4"  class="activiesBg" id="activiesBg"></video>
+                </div>
+
+                <div class="activities_text">
+
+                    
+
+
+                    <div class="activities_text__title" id="trigger2">
+                        <div id="titlew1 " class="posit  scripttake opastrans"  >ML/AI</div> 
+                        <div id="titlwe2 " class="posit  scripttake opastrans"  >Data - Driven SaaS</div> 
+                        <div id="titlwe3 " class="posit  scripttake opastrans"  >Ed Tech</div> 
+                        <div id="titlwe4 " class="posit scripttake  opastrans" >FinTech  & <br class="biare"> InsureTech </div> 
+                        <div id="titlwe5 " class=" scripttake  opastrans2" > Enterprise Automation</div> 
+                        <div id="titlwe6 " class="posit scripttake  opastrans"   >Cybersecurity</div> 
+                    </div>
+                    <div class="activities_text__p"    id="trigger3">
+                        <p id="paragraphe1" class="posit scripttake  opastrans" > 
+                            Superior performance and better accuracy are the two main competitive advantages of AI
+                            solutions. Teams that have made a fundamental breakthrough by putting AI at the heart of
+                            their decisions is what excites us and gives us confidence in solving some of the world’s
+                            toughest problems.                            
+                            
+                        </p>
+                        <p id="paragraphe2" class="posit  scripttake opastrans"   > 
+                            Software startups are helping build a data-driven society in which technology plays a major
+                            role in empowering businesses to make better decisions and improve lives.                            
+                        </p>
+                        <p id="paragraphe3" class="posit scripttake  opastrans"  > 
+                            Digitalised education becomes a new reality where people from around the world can get
+                            access to the highest quality education. Digital products and educational platforms will be
+                            the new “norm” ensuring people’s competency to be driven further.
+                            
+                        </p>
+                        <p id="paragraphe4" class="posit  scripttake opastrans"   > 
+                            Horizontal FinTech, RegTech & InsureTech firms who are able to show core competency in
+                            driving change, re-innovate and solve major obstacles are needed. We like to see firms that
+                            have the potential to turn into multi-layered tech giants servicing clients.
+                        </p>
+                        <p id="paragraphe5" class=" scripttake  opastrans2"  style="padding-top: 30px;"> 
+                            We believe that certain enterprise automation solutions will become a de facto standard in
+                            organisations, helping the workforce to upskill. The pace of automation is accelerating and
+                            more business value is generated through smart technological solutions.
+                            
+                        </p>
+                        <p id="paragraphe6" class="posit scripttake  opastrans"   > 
+                            With an increase of technological devices and general shift towards digitalisation,
+                            CyberSecurity is ever more important. Threats have become more sophisticated with entire
+                            infrastructures being vulnerable. As we are creating more and more value from our data we
+                            start to carry larger risks, with data-fueled applications projected to generate $13 trillion
+                            worth of new economic activity by 2030.                            
+                        </p>
+                    </div>
+                <!-- </div> -->
+
+                    
+                    <div class="activities_text_wrappul">
+                        <ul class="activities_text__ul">
+                            <li class="activities_text__li" id="am1"> <span class="activities_text__a" >ML/AI</span> </li>
+                            <li class="activities_text__li" id="am2"> <span class="activities_text__a" >Data</span> </li>
+                            <li class="activities_text__li" id="am3"> <span class="activities_text__a" >Ed Tech</span> </li>
+                            <li class="activities_text__li" id="am4"> <span class="activities_text__a" >Fintech</span> </li>
+                            <li class="activities_text__li" id="am5"> <span class="activities_text__a" >Automation</span> </li>
+                            <li class="activities_text__li" id="am6"> <span class="activities_text__a" >Cybersecurity</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team" >
+
+        <div class="container">
+            <div class="team_wrapp">
+                <h3 class="team__h _anim-items_margin" id="team" >Team</h3>
+            </div>
+
+            <div class="team_slide" >
+                <div class="team_slide__img " >
+
+                    <div class="team_slide__img__">
+                        <div class=" effects_teams  team-max-w-ph team-absolute-position effects_teams default_show__img" id="man1"><img class="lozad" data-src="img/maxim.webp" alt=""></div> 
+                        <div class=" effects_teams  team-max-w-ph team-absolute-position effects_teams" id="man2"><img class="lozad" data-src="img/egor.webp" alt=""></div> 
+                        <div class=" effects_teams  team-max-w-ph team-absolute-position effects_teams" id="man3"><img class="lozad" data-src="img/alex-tarlo.webp" alt=""></div> 
+                        </div>
+                </div>
+
+                <div class="team_slide__info" >
+                    <div class="team_slide__names">
+                    <div class="name1 stylesname" id="alex"> Egor Galkin </div>
+                    <div class="name2 stylesname pdfixname" id="egor"> Maxim Matias</div>
+                    <div class="name3 stylesname" id="max">Alex Tarlo </div>
+                    </div>
+                    <div class="team_slide__p " >
+
+
+                        <div class="slide_p_wrapp   mtteam  txtfade default_show__text" id="firstinfo">
+ 
+                            <div class="team_secondinfo__title"> Managing Partner</div>
+                            <div class="team_secondinfo__subtitle">
+                                Prior to founding Quartz, Egor worked in asset management with various HNWI and Family
+                                offices. Egor has successfully participated in dozens of late stage venture deals such as
+                                (UiPath, Palantir, Udemy, Rubrik, Klarna), and has also participated in over 90 IPOs.
+                                <br><br>                                
+                                At Quartz Egor Galkin is responsible for investment analysis and relations in Eastern Europe
+                                and Russia.
+                            </div>
+
+                        </div>
+
+                        <div class="slide_p_wrapp  mtteam  txtfade" id="firstinfo2">
+
+                            <div class="team_secondinfo__title"> Managing Partner</div>
+                            <div class="team_secondinfo__subtitle">
+                                Maxim has co-founded several startups after he entered the early-stage Venture Capital
+                                space. Prior to Quartz Capital, Maxim was working at OpenOcean where his main focus was
+                                to create and scale a venture platform, form a global DD network of data-leaders, subsequently to create a stable source of deal flow.
+                                <br> <br>
+                                At Quartz Capital, Maxim is responsible for global partnerships, expanding the investor
+                                network and building new relationships to gain access to the best deals.
+
+                            </div>
+
+                        </div>
+
+                        <div class="slide_p_wrapp  mtteam txtfade" id="firstinfo3">
+
+                            <div class="team_secondinfo__title" >Non executive director</div>
+                            <div class="team_secondinfo__subtitle">
+                                After a career in Barclays Capital derivative sales Alex went on to build a real estate business in London with
+                                AUM in excess of USD $1.5B. Currently Alexander advices Quartz with everything from legal structuring to
+                                providing relevant contacts within the industries who can help and assess Quartz investments forensically. Also
+                                Alex graduated from University College London with a degree in Economics
+                                
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+   
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <section class="news" id="news" style="display: none;">
+
+
+
+<div class="popup" id="popup1">
+    <a class="popup_area" href="#news"></a>
+    <div class="popup__body">
+        <div class="popup_content">
+            <div class="popup_bgcolornews"></div>
+            <a class="popup_close" href="#news">&#10006;</a>
+            <div class="popup_title">Swimimg Pool</div>
+            <!-- <div class="bgcolornews"> -->
+
+                <div class="popup_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Earum perspiciatis eos possimus vel sequi illo deserunt, 
+                    commodi distinctio ea magnam odit fugiat libero quisquam 
+                    quibusdam quia beatae praesentium nostrum voluptas?
+            </div>
+
+            <div class="popup_text" style="margin-top: 30px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Recusandae voluptas impedit tempore, necessitatibus autem 
+                rerum in illum iure quasi quia odio repellat. Inventore 
+                optio fugit numquam, ipsam incidunt quo voluptatem?
+            </div>
+        <!-- </div> -->
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup2">
+    <a class="popup_area" href="#news"></a>
+    <div class="popup__body">
+        <div class="popup_content">
+            <div class="popup_bgcolornews"></div>
+            <a class="popup_close" href="#news">&#10006;</a>
+            <div class="popup_title">Gym Space</div>
+            <div class="popup_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum perspiciatis eos possimus vel sequi illo deserunt, 
+                commodi distinctio ea magnam odit fugiat libero quisquam 
+                quibusdam quia beatae praesentium nostrum voluptas?
+        </div>
+
+        <div class="popup_text" style="margin-top: 30px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Recusandae voluptas impedit tempore, necessitatibus autem 
+            rerum in illum iure quasi quia odio repellat. Inventore 
+            optio fugit numquam, ipsam incidunt quo voluptatem?
+        </div>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup3">
+    <a class="popup_area" href="#news"></a>
+    <div class="popup__body">
+        <div class="popup_content">
+            <div class="popup_bgcolornews"></div>
+            <a class="popup_close" href="#news">&#10006;</a>
+            <div class="popup_title">Private Beach Territoy</div>
+            <div class="popup_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum perspiciatis eos possimus vel sequi illo deserunt, 
+                commodi distinctio ea magnam odit fugiat libero quisquam 
+                quibusdam quia beatae praesentium nostrum voluptas?
+        </div>
+
+        <div class="popup_text" style="margin-top: 30px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Recusandae voluptas impedit tempore, necessitatibus autem 
+            rerum in illum iure quasi quia odio repellat. Inventore 
+            optio fugit numquam, ipsam incidunt quo voluptatem?
+        </div>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup5">
+    <a class="popup_area" href="#news"></a>
+    <div class="popup__body">
+        <div class="popup_content">
+            <div class="popup_bgcolornews"></div>
+            <a class="popup_close" href="#news">&#10006;</a>
+            <div class="popup_title">Swimimg Pool</div>
+            <div class="popup_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum perspiciatis eos possimus vel sequi illo deserunt, 
+                commodi distinctio ea magnam odit fugiat libero quisquam 
+                quibusdam quia beatae praesentium nostrum voluptas?
+        </div>
+
+        <div class="popup_text" style="margin-top: 30px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Recusandae voluptas impedit tempore, necessitatibus autem 
+            rerum in illum iure quasi quia odio repellat. Inventore 
+            optio fugit numquam, ipsam incidunt quo voluptatem?
+        </div>
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup4">
+    <a class="popup_area" href="#news"></a>
+    <div class="popup__body">
+        <div class="popup_content">
+            <div class="popup_bgcolornews"></div>
+            <a class="popup_close" href="#news">&#10006;</a>
+            <div class="popup_title">Swimimg Pool</div>
+            <div class="popup_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Earum perspiciatis eos possimus vel sequi illo deserunt, 
+                commodi distinctio ea magnam odit fugiat libero quisquam 
+                quibusdam quia beatae praesentium nostrum voluptas?
+        </div>
+        <div class="popup_text" style="margin-top: 30px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Recusandae voluptas impedit tempore, necessitatibus autem 
+            rerum in illum iure quasi quia odio repellat. Inventore 
+            optio fugit numquam, ipsam incidunt quo voluptatem?
+        </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="container">
+            <div class="news_wrapp">
+                <h3 class="news__h _anim-items_margin">News</h3>
+            </div>
+        </div>
+
+        <div class="maxw mauto_news">
+        <!-- img/new_slide4.webp -->
+            <div class="news-slider swiper-container">
+                <div class="news_slider__wrapp swiper-wrapper">
+                    <div class="news-slider__slide swiper-slide news-slide__active" onclick="javascript:location.href='#popup1';" id="slidenews1">
+                        <div class="contain news_bgimg1 lozad" data-background-image-set="img/new_slide1.webp"> <div class="news_drk-filter">
+                            <div class="news_absolute1">
+                                <div class="parrr1">
+                                    <div class="titilesnews">Swimimg Pool</div>
+                                    <div class="paragraheesnews">
+                                        Olympic size pool where you can
+                                        go for a vigorous swim or Jacuzzi
+                                        Pon sanncis tecnica ere
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> </div>
+                    </div>
+                    <div class="news-slider__slide swiper-slide" onclick="javascript:location.href='#popup2';">
+                        <div class="contain news_bgimg2 lozad" data-background-image-set="img/new_slide2.webp"> <div class="news_drk-filter">
+                            <div class="news_absolute4">
+                                <div class="parrr4">
+                                    <div class="titilesnews">Swimimg Pool</div>
+                                    <div class="paragraheesnews">
+                                        Olympic size pool where you can
+                                        go for a vigorous swim or Jacuzzi
+                                        Pon sanncis tecnica ere
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> </div>
+                    </div>
+                    <div class="news-slider__slide swiper-slide" onclick="javascript:location.href='#popup3';">
+                        <div class="contain news_bgimg3 lozad" data-background-image-set="img/new_slide3.webp"> <div class="news_drk-filter">
+
+                            <div class="news_absolute3">
+                                <div class="parrr3">
+                                    <div class="titilesnews">Swimimg Pool</div>
+                                    <div class="paragraheesnews">
+                                        Olympic size pool where you can
+                                        go for a vigorous swim or Jacuzzi
+                                        Pon sanncis tecnica ere
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div> </div>
+                    </div>
+                    <div class="news-slider__slide swiper-slide" onclick="javascript:location.href='#popup4';">
+                        <div class="contain news_bgimg4 lozad" data-background-image-set="img/new_slide4.webp"> <div class="news_drk-filter">
+                            <div class="news_absolute4">
+                                <div class="parrr4">
+                                    <div class="titilesnews">Swimimg Pool</div>
+                                    <div class="paragraheesnews">
+                                        Olympic size pool where you can
+                                        go for a vigorous swim or Jacuzzi
+                                        Pon sanncis tecnica ere
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> </div>
+                    </div>
+                    <div class="news-slider__slide swiper-slide" onclick="javascript:location.href='#popup5';">
+                        <div class="contain news_bgimg5 lozad" data-background-image-set="img/new_slide5.webp"> <div class="news_drk-filter">
+                            <div class="news_absolute5">
+                                <div class="parrr">
+                                    <div class="titilesnews">Swimimg Pool</div>
+                                    <div class="paragraheesnews">
+                                        Olympic size pool where you can
+                                        go for a vigorous swim or Jacuzzi
+                                        Pon sanncis tecnica ere
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrolbar"></div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer" id="contacts" > 
+
+<section class="contacts">
+    <div class="container bglines lozad"  data-background-image="img/lines.png">
+        <div class="contacts_wrapp">
+
+            <h3 class="contacts__h _anim-items_margin">Contacts</h3>
+
+            <div class="contacts_wrappform">
+
+                <div class="contacts_wrappform__img" >
+
+
+                    <div class="matre1 bdmatre">
+                        <div class="matre2 bdmatre">
+                            <div class="matre3 bdmatre">
+                                <img data-src="img/earth.png" alt="" class="earhh lozad" >
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts_wrappform_form">
+
+                    <div class="contacts_wrappform_title">
+                        Leave your details and our manager will contact you.
+                    </div>
+
+                    <form action="php/send.php" method="post" name="form">
+                        
+                        <div class="form_input"><input name="name" type="text" placeholder="Name" class="form_input__t" /></div>
+                        
+                        
+                        <div class="form_input"><input name="telephone" type="tel" placeholder="Telephone" class="form_input__t" /></div>
+                        
+                        
+                        <div class="form_input"><input name="email" type="text" placeholder="E-mail" class="form_input__t" /></div>
+                        
+                        
+                        <div class="form_input lstcild"><input name="comment" type="text" placeholder="Comment" class="form_input__t" /></div>
+                        
+                        
+
+                        <div class="form_last">
+                            <div class="form_privacy"> <a href="#" class="form_privacy__a">privacy policy</a> </div>
+                            <div class="form_submit"><input type="submit" value="submit" class="submit__a" /></div>
+                             
+                        </div>
+                      </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    
+</section>
+
+<section class="adress">
+
+<div class="container" style="position: relative">
+
+<div class="adress_titles-nav">
+<div class="adress_titles-nav__londnon _active-title1 title-nav_active"> <span style="display: inline-block; margin-right: 5px;">	&bull;</span> London</div>
+<div class="adress_titles-nav__moscow _active-title2"> <span style="display: inline-block; margin-right: 5px;">	&bull;</span> Moscow</div>
+</div>
+
+<div class="adress_info">
+
+
+<p class="adress_info__p">
+    <span  class="adress_info__span" style="display: block; margin-bottom: 28px;">Address:</span>
+
+
+    <span class="rus_p">
+        Suite 12 2nd Floor,
+        Queens House,
+        180 Tottenham Court Road,
+        London W1T 7PD
+    </span>
+</p>
+
+<div class="adress_info_wrapp">
+
+    <p class="adress_info__p" style="margin-bottom: 28px;">
+        <span  class="adress_info__span" style="display: block; margin-bottom: 28px;">Telephone:</span>
+         <a href="tel:(020) xxxx xxxx" style="color: white;"> (020) xxxx xxxx</a>
+    </p>
+    <p class="adress_info__p">
+        <span  class="adress_info__span" style="display: block; margin-bottom: 28px;">E-mail:</span>
+        <a href="mailto:info@quartzcapital.co.uk" style="color: white;">info@quartzcapital.co.uk</a>
+    </p>
+
+</div>
+
+</div>
+<div class="adress_telegram">
+    <div class="adress_social__telegram">
+        <a href="https://t.me/quartzcapital"><img class="lozad hover-effect-telegram" data-src="img/telegram.svg" alt="telegram" ></a> 
+    </div>
+</div>
+
+
+<!-- <div class="adress_social">
+        <div class="adress_social__telegram">
+            <img src="img/icons8-телеграмма-app.svg" alt="" class="dskj">
+        </div> 
+    </div> -->
+</div>
+
+</section>
+
+
+<section class="map footer-hide" style="display: none;">
+
+<div class="maxw mauto_footer">
+    <div class="map_wrapp" id="map">
+        <div class="maaaap"></div>
+         
+        <div class="map_adress" >
+            <div class="map_adress_wrapp">
+                <div class="map_adress_citys">
+                    <div class="map_adress__moscow"> &bull; Moscow</div>
+                    <div class="map_adress__london"> &bull; London</div>
+                </div>
+    
+                <div class="map_adress_info">
+    
+    
+                    <div class="map_info_d">
+                        <div class=" gostspan ">Address:</div>
+                        <div class=" boldspan ">
+                            10TH FLOOR 240 BLACKFRIARS ROAD LONDON SE1 8NW
+                            <span style="font-family: 'Gothic A1', sans-serif; display: block; font-weight: 600;"> 
+                                БЦ «Галерея 76», ул. Профсоюзная, д. 76, 117393, Москва, Россия
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="map_info_d">
+                        <div class=" gostspan ">Telephone:</div>
+                        <div class=" boldspan ">
+                            (020) xxxx xxxx
+                        </div>
+                    </div>
+                    <div class="map_info_d">
+                        <div class=" gostspan ">e-mail:</div>
+                        <div class=" boldspan ">
+                            info@quartzcapital.co.uk
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYK90S27ARcfXe57IMq2vBgJWpkB_6l_k"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/learnmore.js"></script>
+
+
+</body>
+</html>
